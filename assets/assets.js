@@ -35,6 +35,9 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import behance from './behance.png';
+import linkedin from './linkedin.png';
+import github from './github.png';
 
 export const assets = {
     user_image,
@@ -44,6 +47,9 @@ export const assets = {
     edu_icon_dark,
     project_icon,
     project_icon_dark,
+    github,
+    behance,
+    linkedin,
     vscode,
     firebase,
     figma,

@@ -1,8 +1,14 @@
 import { assets } from '@/assets/assets'
 import Image from 'next/image'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const Contact = () => {
+
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const [result, setResult] = useState("");
 
@@ -29,40 +35,51 @@ const Contact = () => {
     }
   };
 
+  if (!mounted) return null;
+
   return (
-    <div id='contact' className='w-full px-[12%] py-10 scroll-mt-20 bg-[url("/
-    footer-bg-color.png")] bg-no-repeat bg-center bg-[length:90%_auto]'>
+    <div id='contact' className='w-full px-[12%] py-10 scroll-mt-20 bg-[url("/footer-bg-color.png")] bg-no-repeat bg-center bg-[length:90%_auto]'>
       <h4 className='text-center mb-2 text-lg font-Ovo'>
         Connect with me</h4>
       <h2 className='text-center text-5xl font-Ovo'>
         Get in touch</h2>
 
-        <p className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
-            I'd love to hear from you! If you have any questions, comments, or feedback,
-            please use the form below.
-        </p>
+      <div className="flex justify-center items-center gap-4 mt-4 mb-4">
+        <Image src={assets.linkedin} alt="LinkedIn"
+          onClick={() => location.href = 'https://www.linkedin.com/in/tamizhasn/'}
+          className='w-10 hover:bg-lightHover hover:-translate-y-1 duration-500' />
+        <Image src={assets.behance} alt="Behance"
+          onClick={() => location.href = 'https://www.behance.net/tamilasn'}
+          className='w-10 hover:bg-lightHover hover:-translate-y-1 duration-500' />
+        <Image src={assets.github} alt="Github"
+          onClick={() => location.href = 'https://github.com/tamizhasn'}
+          className='w-10 hover:bg-lightHover hover:-translate-y-1 duration-500' />
+      </div>
 
-        <form onSubmit={onSubmit} className='max-w-2xl mx-auto'>
-            <div className='grid grid-cols-auto gap-6 mt-10 mb-8'>
-                <input type="text" placeholder='Enter your name' required
-                className='flex-1 p-3 outline-none border-[0.5px] border-gray-400
-                rounded-md bg-white' name='name' />
-                <input type="email" placeholder='Enter your email' required
-                className='flex-1 p-3 outline-none border-[0.5px] border-gray-400
-                rounded-md bg-white' name='email'/>
-            </div>
-            <textarea rows='6' placeholder='Enter your message' required
-            className='w-full p-4 outline-none border-[0.5px] border-gray-400
-            rounded-md bg-white mb-6' name='message'></textarea>
+      <p className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
+        I'd love to hear from you! If you have any questions, comments, or feedback,
+        please use the form below.
+      </p>
 
-            <button type='submit'
-            className='py-2 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500'>
-            Submit now <Image src={assets.right_arrow_white} alt='' className='w-4'/> </button>
+      <form onSubmit={onSubmit} className='max-w-2xl mx-auto'>
+        <div className='grid grid-cols-auto gap-6 mt-10 mb-8'>
+          <input type="text" placeholder='Enter your name' required
+            className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white' name='name' />
+          <input type="email" placeholder='Enter your email' required
+            className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white' name='email' />
+        </div>
+        <textarea rows='6' placeholder='Enter your message' required
+          className='w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6' name='message'></textarea>
 
-            <p className='mt-4 text-center'>{result}</p>
-        </form>
+        <button type='submit'
+          className='py-2 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500'>
+          Submit now <Image src={assets.right_arrow_white} alt='' className='w-4' />
+        </button>
+
+        <p className='mt-4 text-center'>{result}</p>
+      </form>
     </div>
   )
 }
 
-export default Contact
+export default Contact;

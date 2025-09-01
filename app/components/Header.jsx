@@ -25,7 +25,7 @@ const Header = () => {
             >contact me <Image src={assets.right_arrow_white} alt=''
             className='w-4'/></a>
 
-            <a href='/sample-resume.pdf' download  
+            <a href='https://drive.google.com/file/d/1G8EXa50UefN2MzDI92isTHGKCX0JO-s8/view?usp=sharing' download  
             className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2'>
             check resume!<Image src={assets.download_icon} alt=''
             className='w-4'/></a>

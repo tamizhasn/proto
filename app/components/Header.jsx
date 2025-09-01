@@ -11,7 +11,7 @@ const Header = () => {
       </div>
       <h1 className='flex items-end gap-2 text-3xl md:text-5xl mt-3 font-Ovo'>
             Hello! I'm <span className='text-sky-600'>Tamilarasan</span> <Image src={assets.hand_icon} alt='' 
-            className='w-9'/></h1>
+            className='w-7'/></h1>
       <h1 className='text-3xl sm:text-6xl lg: text-[66px] font-Ovo'>
           Software Engineer</h1>
 

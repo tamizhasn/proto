@@ -38,7 +38,7 @@ const Contact = () => {
   if (!mounted) return null;
 
   return (
-    <div id='contact' className='w-full px-[12%] py-10 scroll-mt-20 bg-[url("/footer-bg-color.png")] bg-no-repeat bg-center bg-[length:90%_auto] z-10'>
+    <div id='contact' className='w-full px-[12%] py-10 scroll-mt-20 bg-[url("/footer-bg-color.png")] bg-no-repeat bg-center bg-[length:90%_auto] relative z-10'>
       <h4 className='text-center mb-2 text-lg font-Ovo'>
         Connect with me</h4>
       <h2 className='text-center text-5xl font-Ovo'>
@@ -63,7 +63,7 @@ const Contact = () => {
 
       <form onSubmit={onSubmit} className='max-w-2xl mx-auto'>
         <div className='grid grid-cols-auto gap-6 mt-10 mb-8'>
-          <input type="text" placeholder='Enter your name' required
+          <input type="text" placeholder='Enter your n ame' required
             className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white' name='name' />
           <input type="email" placeholder='Enter your email' required
             className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white' name='email' />

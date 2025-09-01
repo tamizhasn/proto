@@ -10,6 +10,15 @@ export default {
   ],
   theme: {
   	extend: {
+		keyframes: {
+        aurora: {
+          "0%": { backgroundPosition: "50% 50%, 50% 50%" },
+          "100%": { backgroundPosition: "350% 50%, 350% 50%" },
+        		},
+			},
+		animation: {
+			aurora: "aurora 40s linear infinite", // adjust speed here
+		},
   		colors: {
   			lightHover: '#fcf4ff',
   			background: 'hsl(var(--background))',

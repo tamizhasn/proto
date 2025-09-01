@@ -12,13 +12,16 @@ export default function Home() {
 
 
   return (
-    <AuroraBackground>
+    <AuroraBackground className="relative min-h-screen">
       <Navbar />
-      <Header />
-      <About />
-      <Services />
-      <Work />
-      <Contact />
+      <div className="pt-20 relative z-20">
+        <Header /> 
+        <About />
+        <Services />
+        <Work />
+        <Contact />
+      </div>
+      
     </AuroraBackground>
   );
 }

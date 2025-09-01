@@ -4,14 +4,17 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <div className='w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col 
-    items-center justify-center gap-4 relative z-10'>
+    <div className='w-11/12 max-w-3xl text-center mx-auto min-h-screen flex flex-col
+    items-center justify-center gap-6 relative z-20'>
       <div>
         <Image src={assets.profile_img} alt='' className='rounded-full w-64'/>
       </div>
-      <h1 className='flex items-end gap-2 text-3xl md:text-5xl mt-3 font-Ovo'>
-            Hello! I'm <span className='text-sky-600'>Tamilarasan</span> <Image src={assets.hand_icon} alt='' 
-            className='w-7'/></h1>
+      
+      <h1 className="inline-flex items-center gap-2 text-3xl md:text-5xl mt-4 font-Ovo">
+      Hello! I'm <span className="text-sky-600">Tamilarasan</span>
+      <Image src={assets.hand_icon} alt="wave" 
+      className="w-7 md:w-9 inline-block"/></h1>
+
       <h1 className='text-3xl sm:text-6xl lg: text-[66px] font-Ovo'>
           Software Engineer</h1>
 

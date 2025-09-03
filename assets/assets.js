@@ -84,24 +84,22 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
+        title: 'Voice controller',
+        description: 'Destktop application',
         bgImage: '/work-1.png',
+        link: 'https://github.com/tamizhasn/Voice_user_interface',
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
-        bgImage: '/work-2.png',
-    },
-    {
-        title: 'Photography site',
-        description: 'Web Design',
+        title: 'Mobile showroom',
+        description: 'Website',
         bgImage: '/work-3.png',
+        link: 'https://vengai-mobiles.vercel.app/',
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
-        bgImage: '/work-4.png',
+        title: 'UI/UX Design',
+        description: 'UI/UX designing',
+        bgImage: '/work-2.png',
+        link: 'https://www.figma.com/proto/kZd57jELw9HVDJzotBFQcs/Carvanaut?page-id=0%3A1&node-id=0-1&p=f&t=UY0R1VfiFdR4qFOb-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2',
     },
 ]
 
@@ -113,8 +111,7 @@ export const serviceData = [
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech Information Technology' },
     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
 ];
 

@@ -1,6 +1,4 @@
 'use client';
-import { useEffect } from 'react';
-import { AuroraBackground } from '@/app/components';
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import About from "./components/About";
@@ -9,19 +7,14 @@ import Work from "./components/Work";
 import Contact from "./components/Contact";
 
 export default function Home() {
-
-
   return (
-    <AuroraBackground className="relative min-h-screen">
-      <Navbar />
-      <div className="pt-20 relative z-20">
-        <Header /> 
+      <>
+        <Navbar />
+        <Header />
         <About />
         <Services />
         <Work />
         <Contact />
-      </div>
-      
-    </AuroraBackground>
+      </>
   );
 }

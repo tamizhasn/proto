@@ -38,7 +38,7 @@ const Contact = () => {
   if (!mounted) return null;
 
   return (
-    <div id='contact' className='w-full px-[12%] py-10 scroll-mt-20 bg-[url("/footer-bg-color.png")] 
+    <div id='contact' className='w-full px-[12%] py-20 scroll-mt-20 bg-[url("/footer-bg-color.png")] 
     bg-no-repeat bg-center bg-[length:90%_auto] sm:bg-[length:60%_auto]'>
       <h4 className='text-center mb-2 text-lg font-Ovo'>
         Connect with me</h4>

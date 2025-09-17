@@ -1,4 +1,12 @@
 import user_image from './user-image.png';
+import html from './html.png';
+import css from './css.png';
+import django from './django.png';
+import springboot from './springboot.png'
+import canva from './canva.png';
+import mysql from './mysql.png';
+import adobe_xd from './adobe-xd.png';
+import javascript from './javascript.png';
 import code_icon from './code-icon.png';
 import code_icon_dark from './code-icon-dark.png';
 import edu_icon from './edu-icon.png';
@@ -16,6 +24,11 @@ import logo_dark from './logo_dark.png';
 import mail_icon from './mail_icon.png';
 import mail_icon_dark from './mail_icon_dark.png';
 import profile_img from './profile-img.png';
+import python from './python.png';
+import java from './java.png';
+import react from './react.png';
+import next_js from './next_js.png';
+import tailwind from './tailwind.png';
 import download_icon from './download-icon.png';
 import hand_icon from './hand-icon.png';
 import header_bg_color from './header-bg-color.png';
@@ -53,8 +66,13 @@ export const assets = {
     vscode,
     firebase,
     figma,
+    canva,
+    adobe_xd,
     git,
     mongodb,
+    mysql,
+    django,
+    springboot,
     right_arrow_white,
     logo,
     logo_dark,
@@ -79,7 +97,13 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+    tailwind,
+    next_js,
+    react,
+    java,
+    python,
+    javascript
 };
 
 export const workData = [
@@ -108,7 +132,27 @@ export const serviceData = [
     { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
     { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
     { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
-]
+];
+
+export const experinceList = [
+    {
+      title: "Languages",
+      skills: ["Python", "Java", "Javascript"]
+    },
+    {
+      title: "Libraries & Framework",
+      skills: ["React", "Next_js", "Tailwind", "Springboot"]
+    },
+    {
+      title: "Designing",
+      skills: ["Figma", "Adobe_xd", "Canva"]
+
+    },
+    {
+      title: "Database & Tools",
+      skills: ["Mysql", "Firebase", "Github"]
+    },
+];
 
 export const infoList = [
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech Information Technology' },

@@ -51,6 +51,7 @@ import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import behance from './behance.png';
 import linkedin from './linkedin.png';
 import github from './github.png';
+import { Languages } from 'lucide-react';
 
 export const assets = {
     user_image,
@@ -128,10 +129,9 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+    { icon: assets.web_icon, title: 'IDM Tech Park', role:"Web developer Intern" ,description: 'Web development with react.js and node.js....', period:"June 2025 - July 2025", link: 'https://drive.google.com/file/d/1FgyUCCmKQxN7B2yeTrrxnmzsp9MS5iI1/view?usp=sharing' },
+    { icon: assets.ui_icon, title: 'Nitroware Technologies Pvt Ltd.', role:"UI/UX Intern ", description: 'UI/UX design focuses on creating a seamless user experience...', period:"April 2025 - May 2025", link: 'https://drive.google.com/file/d/1FiVyzXovwG3g7HA081DygTzrFAUL-JMV/view?usp=sharing' },
+    { icon: assets.graphics_icon, title: 'Graphics design', role:"Free lancing",description: 'Creative design solutions to enhance visual communication...', period:"Available", link: '' },
 ];
 
 export const experinceList = [
@@ -155,10 +155,13 @@ export const experinceList = [
 ];
 
 export const infoList = [
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech Information Technology' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech Information Technology', marks:'8.9 CGPA' },
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Higher Secondary Schooling', marks:'87%' },
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' ,marks:''},
 ];
 
-export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git,
-];
+export const codingProfilesData = [
+    {icon: assets.leetcode, title:"Leetcode", sums:"420+", points:"2000+", languages: "Java, Python, Javascript"},
+    {icon: assets.hackerrank, title:"HackerRank", sums:"50+", points:"700+", languages: "Java, Python"},
+    {icon: assets.codechef, title:"Codechef", sums:"50+", languages: "Java, Python"}
+]

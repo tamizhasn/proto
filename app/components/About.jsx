@@ -27,13 +27,15 @@ const About = () => {
 
                 <ul className='grid grid-cols-1 sm:grid-cols-3 gap-6
                 max-w-2xl'>
-                    {infoList.map(({icon, iconDark, title, description},index) => (
+                    {infoList.map(({icon, iconDark, title, description,marks},index) => (
                       <li className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer
                       hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black'
                       key={index}>
                         <Image src={icon} alt={title} className='w-7 mt-3'/>
                         <h3 className='my-4 font-semibold 
                         text-gray-700'>{title}</h3>
+                        {marks && (<p className='text-gray-800 text-md'>
+                          Grading: {marks}</p>)}
                         <p className='text-gray-600 text-sm'>
                           {description}</p>
                       </li>
@@ -43,17 +45,27 @@ const About = () => {
             </div>
         </div>
 
+        <h3 className='text-center mb-2 text-5xl font-Ovo'> 
+          My Work Experinces
+        </h3>
+
         <div className='grid grid-cols-auto gap-6 my-10'>
-                    {serviceData.map(({icon, title, description, link}, index)=> (
+                    {serviceData.map(({icon, title, role, description, period, link}, index)=> (
                         <div key={index} className='border border-gray-400 rounded-lg px-8 py-12 
                         hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500'>
                             <Image src={icon} alt='' className='w-10'/>
-                            <h3 className='text-lg my-4 text-gray-700'>{title}</h3>
-                            <p className='text-sm text-gray-600 leading-5'>
+                            <h3 className='text-lg mt-4 text-gray-700'>{title}</h3>
+                            <p className='text-md text-gray-700'>
+                              {role}
+                            </p>
+                            <p className='text-sm my-2 text-gray-600 leading-5'>
                                 {description}
                             </p>
+                            <p className='text-sm my-2 text-black-600 leading-5'>
+                              {period}
+                            </p>
                             <a href={link} className='flex items-center gap-2 text-sm mt-5'>
-                                Read more <Image src={assets.right_arrow} alt='' className='w-4'/>
+                                Check out <Image src={assets.right_arrow} alt='' className='w-4'/>
                             </a>
                         </div>
                     ))}

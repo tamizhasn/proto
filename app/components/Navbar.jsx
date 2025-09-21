@@ -34,7 +34,7 @@ const Navbar = () => {
 
   return (
     <>
-    <div className='fixed top-0 right-0 w-11/12 z-99 translate-y-[-80%]'>
+    <div className='fixed top-0 right-0 w-11/12 translate-y-[-80%]'>
       <Image src={assets.header_bg_color} alt='' className='w-full'/>
     </div>
       <nav className={`w-full fixed px-5 lg:px-8 xl: px-[8%] py-4 flex 
@@ -46,7 +46,7 @@ const Navbar = () => {
         <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? "" : "bg-white shadow-sm bg-opacity-50"} `}>
             <li><a className='font-Ovo' href='#top'>Home</a></li>
             <li><a className='font-Ovo' href='#about'>About me</a></li>
-            <li><a className='font-Ovo' href='#services'>Services</a></li>
+            <li><a className='font-Ovo' href='#skills'>Skills</a></li>
             <li><a className='font-Ovo' href='#work'>My Work</a></li>
             <li><a className='font-Ovo' href='#contact'>Contact me</a></li>
         </ul>
@@ -72,7 +72,7 @@ const Navbar = () => {
 
             <li><a className='font-Ovo' onClick={closeMenu} href='#top'>Home</a></li>
             <li><a className='font-Ovo' onClick={closeMenu} href='#about'>About me</a></li>
-            <li><a className='font-Ovo' onClick={closeMenu} href='#services'>Services</a></li>
+            <li><a className='font-Ovo' onClick={closeMenu} href='#skills'>Skills</a></li>
             <li><a className='font-Ovo' onClick={closeMenu} href='#work'>My Work</a></li>
             <li><a className='font-Ovo' onClick={closeMenu} href='#contact'>Contact me</a></li>
         </ul>

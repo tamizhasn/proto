@@ -4,9 +4,9 @@ import Image from 'next/image'
 import React from 'react'
 
 
-const Services = () => {
+const Skills = () => {
   return (
-    <div id="services" className='w-full px-[12%] py-20 scroll-mt-20 relative'>
+    <div id="skills" className='w-full px-[12%] py-20 scroll-mt-20 relative'>
       <h4 className='text-center mb-2 text-lg font-Ovo'>
         Areas of Expertise</h4>
       <h2 className='text-center text-5xl font-Ovo'>
@@ -53,4 +53,4 @@ const Services = () => {
   )
 }
 
-export default Services
+export default Skills

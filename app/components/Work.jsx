@@ -25,8 +25,8 @@ const projects = [
     fullDesc: "TelcoMind AI acts as a proactive virtual employee for telecom customer support. Powered by Llama 3.1 via Groq and Deepgram for real-time STT/TTS, it leverages SQLite memory to predict caller issues before they finish speaking. The system utilizes a fully asynchronous WebSocket FastAPI backend to handle live audio streams from Twilio, paired with a React dashboard that visualizes live sentiment analysis, intent tracking, and CRM telemetry.",
     image: assets.telcomind || "/placeholder.jpg",
     tech: ["React", "FastAPI", "Llama 3.1", "Twilio", "Deepgram", "WebSockets"],
-    link: "#",
-    github: "https://github.com/tamizhasn/TelcoMind-AI",
+    link: "https://github.com/tamizhasn/TelcoMindAI",
+    github: "https://github.com/tamizhasn/TelcoMindAI",
     reverse: true
   },
   {

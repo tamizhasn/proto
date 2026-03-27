@@ -18,6 +18,7 @@ import firebase from './firebase.png';
 import figma from './figma.png';
 import git from './git.png';
 import mongodb from './mongodb.png';
+import postgresql from './postgresql.png';
 import right_arrow_white from './right-arrow-white.png';
 import logo from './logo.png';
 import logo_dark from './logo_dark.png';
@@ -51,6 +52,9 @@ import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import behance from './behance.png';
 import linkedin from './linkedin.png';
 import github from './github.png';
+import vui from './project-vui.png';
+import identix from './project-identix.png'
+import telcomind from './project-telcomind.png'
 import { Languages } from 'lucide-react';
 
 export const assets = {
@@ -71,6 +75,7 @@ export const assets = {
     adobe_xd,
     git,
     mongodb,
+    postgresql,
     mysql,
     django,
     springboot,
@@ -104,64 +109,8 @@ export const assets = {
     react,
     java,
     python,
-    javascript
+    javascript,
+    vui,
+    identix,
+    telcomind
 };
-
-export const workData = [
-    {
-        title: 'Voice controller',
-        description: 'Destktop application',
-        bgImage: '/work-1.png',
-        link: 'https://github.com/tamizhasn/Voice_user_interface',
-    },
-    {
-        title: 'Mobile showroom',
-        description: 'Website',
-        bgImage: '/work-3.png',
-        link: 'https://vengai-mobiles.vercel.app/',
-    },
-    {
-        title: 'UI/UX Design',
-        description: 'UI/UX designing',
-        bgImage: '/work-2.png',
-        link: 'https://www.figma.com/proto/kZd57jELw9HVDJzotBFQcs/Carvanaut?page-id=0%3A1&node-id=0-1&p=f&t=UY0R1VfiFdR4qFOb-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2',
-    },
-]
-
-export const serviceData = [
-    { icon: assets.web_icon, title: 'IDM Tech Park', role:"Web developer Intern" ,description: 'Web development with react.js and node.js....', period:"June 2025 - July 2025", link: 'https://drive.google.com/file/d/1FgyUCCmKQxN7B2yeTrrxnmzsp9MS5iI1/view?usp=sharing' },
-    { icon: assets.ui_icon, title: 'Nitroware Technologies Pvt Ltd.', role:"UI/UX Intern ", description: 'UI/UX design focuses on creating a seamless user experience...', period:"April 2025 - May 2025", link: 'https://drive.google.com/file/d/1FiVyzXovwG3g7HA081DygTzrFAUL-JMV/view?usp=sharing' },
-    { icon: assets.graphics_icon, title: 'Graphics design', role:"Free lancing",description: 'Creative design solutions to enhance visual communication...', period:"Available", link: '' },
-];
-
-export const experinceList = [
-    {
-      title: "Languages",
-      skills: ["Python", "Java", "Javascript"]
-    },
-    {
-      title: "Libraries & Framework",
-      skills: ["React", "Next_js", "Tailwind", "Springboot"]
-    },
-    {
-      title: "Designing",
-      skills: ["Figma", "Adobe_xd", "Canva"]
-
-    },
-    {
-      title: "Database & Tools",
-      skills: ["Mysql", "Firebase", "Github"]
-    },
-];
-
-export const infoList = [
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech Information Technology', marks:'8.9 CGPA' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Higher Secondary Schooling', marks:'87%' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' ,marks:''},
-];
-
-export const codingProfilesData = [
-    {icon: assets.leetcode, title:"Leetcode", sums:"420+", points:"2000+", languages: "Java, Python, Javascript"},
-    {icon: assets.hackerrank, title:"HackerRank", sums:"50+", points:"700+", languages: "Java, Python"},
-    {icon: assets.codechef, title:"Codechef", sums:"50+", languages: "Java, Python"}
-]

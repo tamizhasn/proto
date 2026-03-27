@@ -42,7 +42,7 @@ const Header = () => {
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.6 }}
             className="text-lg text-gray-600 max-w-lg mb-8 leading-relaxed font-medium"
           >
-            Hello! This is  Tamilarasan. I enjoy turning big ideas into smooth, 
+            I enjoy turning big ideas into smooth, 
             high-performing web experiences by blending clean, intuitive design with powerful technology
           </motion.p>
 
@@ -63,7 +63,7 @@ const Header = () => {
               Let's Talk
             </a>
             <a href="https://drive.google.com/file/d/1hskmWyZTTpXT4pR3eLIfW80vLlB7vQfi/view?usp=sharing" className="font-bold text-[#111827] flex items-center gap-2 border-b-2 border-[#111827] pb-1 hover:text-sky-600 hover:border-sky-600 transition-colors">
-              Download CV ↓
+              check CV ↗
             </a>
           </motion.div>
 

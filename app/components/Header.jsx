@@ -63,7 +63,7 @@ const Header = () => {
               Let's Talk
             </a>
             <a href="https://drive.google.com/file/d/1hskmWyZTTpXT4pR3eLIfW80vLlB7vQfi/view?usp=sharing" className="font-bold text-[#111827] flex items-center gap-2 border-b-2 border-[#111827] pb-1 hover:text-sky-600 hover:border-sky-600 transition-colors">
-              check CV ↗
+              Check CV ↗
             </a>
           </motion.div>
 
